@@ -1,9 +1,9 @@
 return {
-    "scottmckendry/dashboard-nvim",
+    "nvimdev/dashboard-nvim",
     event = "VimEnter",
     dev = true,
     config = function()
-        vim.cmd("highlight DashboardHeader guifg=#ffffff")
+        -- vim.cmd("highlight DashboardHeader guifg=#ffffff")
         require("dashboard").setup({
             theme = "hyper",
             hide = {
@@ -11,6 +11,19 @@ return {
             },
             config = {
                 week_header = { enable = true },
+                -- header = {
+                --     "           ▄ ▄                   ",
+                --     "       ▄   ▄▄▄     ▄ ▄▄▄ ▄ ▄     ",
+                --     "       █ ▄ █▄█ ▄▄▄ █ █▄█ █ █     ",
+                --     "    ▄▄ █▄█▄▄▄█ █▄█▄█▄▄█▄▄█ █     ",
+                --     "  ▄ █▄▄█ ▄ ▄▄ ▄█ ▄▄▄▄▄▄▄▄▄▄▄▄▄▄  ",
+                --     "  █▄▄▄▄ ▄▄▄ █ ▄ ▄▄▄ ▄ ▄▄▄ ▄ ▄ █ ▄",
+                --     "▄ █ █▄█ █▄█ █ █ █▄█ █ █▄█ ▄▄▄ █ █",
+                --     "█▄█ ▄ █▄▄█▄▄█ █ ▄▄█ █ ▄ █ █▄█▄█ █",
+                --     "    █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█ █▄█▄▄▄█    ",
+                --     "",
+                --     "",
+                --  },
                 shortcut = {
                     {
                         icon = "󰒲  ",

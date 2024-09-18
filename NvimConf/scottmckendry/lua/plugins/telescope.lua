@@ -51,24 +51,24 @@ return {
                     },
                 },
 
-                smart_open = {
-                    match_algorithm = "fzf",
-                },
+                -- smart_open = {
+                --     match_algorithm = "fzf",
+                -- },
             },
-            pickers = {
-                find_files = {
-                    find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*" },
-                },
-                buffers = {
-                    theme = "dropdown",
-                    previewer = false,
-                    mappings = {
-                        i = {
-                            ["<c-d>"] = "delete_buffer",
-                        },
-                    },
-                },
-            },
+            -- pickers = {
+            --     find_files = {
+            --         find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*" },
+            --     },
+            --     buffers = {
+            --         theme = "dropdown",
+            --         previewer = false,
+            --         mappings = {
+            --             i = {
+            --                 ["<c-d>"] = "delete_buffer",
+            --             },
+            --         },
+            --     },
+            -- },
             defaults = {
                 hidden = true,
                 prompt_prefix = "   ",
@@ -107,7 +107,7 @@ return {
             },
         })
 
-        require("telescope").load_extension("fzf")
-        require("telescope").load_extension("smart_open")
+        -- require("telescope").load_extension("fzf")
+        -- require("telescope").load_extension("smart_open")
     end,
 }

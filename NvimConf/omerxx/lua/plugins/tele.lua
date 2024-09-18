@@ -7,7 +7,7 @@ require('telescope').setup {
   defaults = {
     layout_strategy = "horizontal",
     layout_config = {
-      preview_width = 0.65,     
+      preview_width = 0.65,
       horizontal = {
         size = {
           width = "95%",
@@ -15,11 +15,11 @@ require('telescope').setup {
         },
       },
     },
-  pickers = {
-    find_files = {
-      theme = "dropdown",
-    }
-  },
+    pickers = {
+      find_files = {
+        theme = "dropdown",
+      }
+    },
     mappings = {
       i = {
         ['<C-u>'] = false,
