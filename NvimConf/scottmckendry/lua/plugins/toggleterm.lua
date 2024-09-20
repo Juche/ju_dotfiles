@@ -6,7 +6,12 @@ return {
     },
     opts = {
         shade_terminals = true,
-        direction = "vertical",
-        size = vim.o.columns * 0.5,
+        -- direction = "vertical",
+        -- size = vim.o.columns * 0.5,
+        -- direction = "horizontal",
+        -- size = vim.o.lines * 0.3,
+        direction = "float",
+        autochdir = true,
+        dir = "git_dir",
     },
 }

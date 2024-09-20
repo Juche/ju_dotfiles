@@ -3,7 +3,7 @@ return {
     event = "VimEnter",
     dev = true,
     config = function()
-        -- vim.cmd("highlight DashboardHeader guifg=#ffffff")
+        vim.cmd("highlight DashboardHeader guifg=#ffffff")
         require("dashboard").setup({
             theme = "hyper",
             hide = {
